@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Button } from './components/ui/button/Button'
+import { Checkbox } from './components/ui/checkbox/Checbox'
+
 import './App.css'
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Checkbox label='チェックボックスです' />
       <Button label='ボタンです' disabled={true} onClick={() => setCount((count) => count + 1)} />
     </>
   )
